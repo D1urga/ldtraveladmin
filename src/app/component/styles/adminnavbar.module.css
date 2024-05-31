@@ -1,0 +1,498 @@
+@media screen and (min-width: 900px) {
+  .main {
+    width: 100vw;
+  }
+  .main1 {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(69, 69, 165); */
+    /* display: none;
+    transition: 500ms ease-in-out; */
+  }
+  .outer_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+  }
+  .menu {
+    display: none;
+  }
+  .upper_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 3vw;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact p {
+    /* color: white; */
+    font-size: 14px;
+    /* font-weight: 500; */
+  }
+  .icon {
+    color: white;
+    font-size: 40px;
+    background-color: rgb(26, 121, 255);
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+  .join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join p {
+    /* color: white; */
+    font-size: 14px;
+    /* font-weight: 500; */
+  }
+  .title {
+    display: flex;
+    align-items: center;
+  }
+  .title p {
+    /* color: white; */
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .logo {
+    height: 45px;
+    width: 60px;
+    object-fit: cover;
+    /* background-color: white; */
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  .devider {
+    border: 1px solid;
+    height: 1px;
+  }
+  .lower_div {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 3vw;
+  }
+  .icons {
+    display: flex;
+  }
+  .icon2 {
+    /* color: white; */
+    border: 2px solid;
+    font-size: 40px;
+    padding: 7px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+  }
+  .icon2:nth-child(1):hover {
+    color: rgb(219, 0, 248);
+    border: 2px solid rgb(219, 0, 248);
+    transition: 400ms ease-in-out;
+  }
+  .icon2:nth-child(2):hover {
+    color: rgb(17, 191, 255);
+    border: 2px solid rgb(17, 191, 255);
+    transition: 400ms ease-in-out;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  .links {
+    padding: 10px 20px;
+    margin: 0 4px;
+    /* color: rgb(255, 255, 255); */
+    font-size: 15px;
+    font-weight: 540;
+    /* background-color: rgb(0, 0, 0, 0.3); */
+    border-radius: 30px;
+    transition: 300ms ease-in-out;
+  }
+  .links:hover {
+    transition: 300ms ease-in-out;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
+  .btn {
+    border: none;
+    background-color: rgb(26, 121, 255);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+  }
+  .btn:hover {
+    background-color: white;
+    transition: 300ms ease-in-out;
+    color: black;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .main {
+    width: 100vw;
+  }
+  .main1 {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(69, 69, 165);
+    /* display: none;
+    transition: 500ms ease-in-out; */
+  }
+  .outer_div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+  }
+
+  .upper_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 3vw;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact p {
+    /* color: white; */
+    font-size: 13px;
+    /* font-weight: 500; */
+  }
+  .icon {
+    /* color: white; */
+    font-size: 35px;
+    background-color: rgb(26, 121, 255);
+    padding: 8px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+  .join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join p {
+    /* color: white; */
+    font-size: 13px;
+    /* font-weight: 500; */
+  }
+  .title {
+    display: flex;
+    align-items: center;
+  }
+  .title p {
+    /* color: white; */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .logo {
+    height: 30px;
+    width: 40px;
+    object-fit: cover;
+    /* background-color: white; */
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  .devider {
+    border-bottom: 1px solid;
+    height: 1px;
+  }
+  .lower_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 3vw;
+  }
+  .icons {
+    display: flex;
+  }
+  .icon2 {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 7px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+  }
+  .icon2:nth-child(1):hover {
+    color: rgb(219, 0, 248);
+    border: 2px solid rgb(219, 0, 248);
+    transition: 400ms ease-in-out;
+  }
+  .icon2:nth-child(2):hover {
+    color: rgb(17, 191, 255);
+    border: 2px solid rgb(17, 191, 255);
+    transition: 400ms ease-in-out;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+
+    height: 100px;
+  }
+  .links {
+    padding: 10px 20px;
+    margin: 2px 0;
+    margin: 0 4px;
+    user-select: none;
+    font-size: 15px;
+    font-weight: 540;
+    /* background-color: rgb(0, 0, 0, 0.3); */
+    border-radius: 30px;
+    transition: 300ms ease-in-out;
+    color: white;
+  }
+  .links:hover {
+    transition: 300ms ease-in-out;
+    background-color: rgba(120, 120, 120, 0.4);
+  }
+  .btn {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    /* color: white; */
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    user-select: none;
+  }
+  .btn:hover {
+    background-color: white;
+    transition: 300ms ease-in-out;
+    color: black;
+  }
+  .menu {
+    /* color: white; */
+  }
+  .nav {
+    height: 100vh;
+    width: 65vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+  }
+  .nav1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  .main {
+    width: 100vw;
+  }
+  .main1 {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(69, 69, 165);
+    /* display: none;
+    transition: 500ms ease-in-out; */
+  }
+  .outer_div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+  }
+
+  .upper_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 3vw;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact p {
+    /* color: white; */
+    font-size: 13px;
+    /* font-weight: 500; */
+  }
+  .icon {
+    /* color: white; */
+    font-size: 35px;
+    background-color: rgb(26, 121, 255);
+    padding: 8px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+  .join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join p {
+    /* color: white; */
+    font-size: 13px;
+    /* font-weight: 500; */
+  }
+  .title {
+    display: flex;
+    align-items: center;
+  }
+  .title p {
+    /* color: white; */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .logo {
+    height: 30px;
+    width: 40px;
+    object-fit: cover;
+    /* background-color: white; */
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  .devider {
+    border-bottom: 1px solid;
+    height: 1px;
+  }
+  .lower_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 3vw;
+  }
+  .icons {
+    display: flex;
+  }
+  .icon2 {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 7px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+  }
+  .icon2:nth-child(1):hover {
+    color: rgb(219, 0, 248);
+    border: 2px solid rgb(219, 0, 248);
+    transition: 400ms ease-in-out;
+  }
+  .icon2:nth-child(2):hover {
+    color: rgb(17, 191, 255);
+    border: 2px solid rgb(17, 191, 255);
+    transition: 400ms ease-in-out;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+
+    height: 100px;
+  }
+  .links {
+    padding: 10px 20px;
+    margin: 2px 0;
+    margin: 0 4px;
+    user-select: none;
+    font-size: 15px;
+    font-weight: 540;
+    /* background-color: rgb(0, 0, 0, 0.3); */
+    border-radius: 30px;
+    transition: 300ms ease-in-out;
+    color: white;
+  }
+  .links:hover {
+    transition: 300ms ease-in-out;
+    background-color: rgba(120, 120, 120, 0.4);
+  }
+  .btn {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    /* color: white; */
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    user-select: none;
+  }
+  .btn:hover {
+    background-color: white;
+    transition: 300ms ease-in-out;
+    color: black;
+  }
+  .menu {
+    /* color: white; */
+  }
+  .nav {
+    height: 100vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+  }
+  .nav1 {
+    display: none;
+  }
+}

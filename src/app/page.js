@@ -1,95 +1,127 @@
-import Image from "next/image";
+"use client";
 import styles from "./page.module.css";
+import Checkbox from "@mui/material/Checkbox";
+import { useState } from "react";
 
 export default function Home() {
+  const [checked, setChecked] = useState(true);
+
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+  };
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.main}>
+      <div className={styles.outer_div}>
+        <p className={styles.p1}>Adding Package</p>
+        <div className={styles.buttons}>
+          <button className={styles.btn1}>Save Package</button>
+          <button className={styles.btn2}>Delete</button>
+        </div>
+        <div className={styles.form}>
+          <div className={styles.div1}>
+            <div className={styles.content}>
+              <p className={styles.p2}>Package name</p>
+              <input
+                className={styles.input}
+                placeholder="Enter package name"
+              ></input>
+              <p className={styles.p2}>Time period</p>
+              <input
+                className={styles.input}
+                placeholder="Enter time period"
+              ></input>
+              <div className={styles.costs}>
+                <div>
+                  <p className={styles.p2}>Original cost</p>
+                  <input
+                    className={styles.input1}
+                    placeholder="Enter original cost"
+                  ></input>
+                </div>
+                <div>
+                  <p className={styles.p2}>Discount cost</p>
+                  <input
+                    className={styles.input1}
+                    placeholder="Enter discount cost"
+                  ></input>
+                </div>
+              </div>
+              <p className={styles.p2}>City tags in order</p>
+              <input
+                className={styles.input}
+                placeholder="Enter city tags"
+              ></input>
+              <p className={styles.p2}>Hotel options</p>
+              <div className={styles.hotels}>
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>5 Star</p>{" "}
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>4 Star</p>{" "}
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>3 Star</p>
+              </div>
+              <p className={styles.p2}>Included service</p>
+              <div className={styles.services}>
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>Breakfast</p>{" "}
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>Transfers</p>{" "}
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>Sightseeing</p>
+                <Checkbox
+                  checked={checked}
+                  onChange={handleChange}
+                  inputProps={{ "aria-label": "controlled" }}
+                />
+                <p className={styles.p3}>Watersports</p>
+              </div>
+              <p className={styles.p2}>Overview</p>
+              <input
+                className={styles.input}
+                placeholder="Enter Overview"
+              ></input>
+              <p className={styles.p2}>Itinerary plan</p>
+              <p className={styles.p2}>Title</p>
+              <input className={styles.input} placeholder="Enter title"></input>
+              <br />
+              <p className={styles.p2}>Description</p>
+              <textarea
+                className={styles.input3}
+                placeholder="Enter description"
+              ></textarea>
+            </div>
+          </div>
+          <div className={styles.div2}>
+            <p className={styles.p2}>Image</p>
+            <input type="file" className={styles.file}></input>
+            <div className={styles.img}></div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }

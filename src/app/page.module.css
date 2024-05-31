@@ -447,6 +447,7 @@
       /* background-color: rgba(168, 168, 168, 0.22); */
       height: 40px;
       width: 100%;
+      background-color: transparent;
       padding: 0 15px;
       border-radius: 5px;
       box-shadow: rgb(255, 255, 255) 0 0 2px 0;
@@ -460,6 +461,7 @@
       /* background-color: rgba(168, 168, 168, 0.22); */
       height: 80px;
       width: 100%;
+      background-color: transparent;
       padding: 10px 15px;
       border-radius: 5px;
       box-shadow: rgb(255, 255, 255) 0 0 2px 0;
@@ -474,6 +476,7 @@
       width: 42vw;
       padding: 0 15px;
       border-radius: 5px;
+      background-color: transparent;
       box-shadow: rgb(255, 255, 255) 0 0 2px 0;
       margin-bottom: 10px;
     }

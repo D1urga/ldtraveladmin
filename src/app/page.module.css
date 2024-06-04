@@ -69,6 +69,7 @@
     box-shadow: grey 0 0 3px 0;
     margin-bottom: 10px;
   }
+
   .input1,
   .input1:focus {
     outline: none;
@@ -115,6 +116,11 @@
   .file {
     margin-bottom: 20px;
     margin-top: 10px;
+  }
+  .myimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   @media (prefers-color-scheme: dark) {
     .input,
@@ -270,6 +276,11 @@
     height: 300px;
     border-radius: 5px;
     border: 1px dotted;
+  }
+  .myimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .file {
     margin-bottom: 20px;
@@ -434,6 +445,11 @@
     height: 300px;
     border-radius: 5px;
     border: 1px dotted;
+  }
+  .myimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .file {
     margin-bottom: 20px;

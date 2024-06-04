@@ -41,15 +41,15 @@ export default function Home() {
   var list2 = [breakfast, transfers, sightseeing, watersports];
   const [isposting, setisposting] = useState(false);
   const [formData, setFormData] = useState({
-    packageName: "hdhdfds",
-    originalCost: "rwere",
-    discountCost: "tewt",
-    description: "rwerwrwerw",
-    distance: "rwerwerwrwe",
-    ittitle: "rwerwrwerw",
-    itdes: "rwerwerwrwe",
-    duration: "weter",
-    cityTags: "hjadsvbas",
+    packageName: "Himachal",
+    originalCost: "23000",
+    discountCost: "20000",
+    description: "des",
+    distance: "600 km",
+    ittitle: "title",
+    itdes: "description",
+    duration: "9 days 8 nights",
+    cityTags: "delhi - leh",
   });
   const [imgurl, setimgurl] = useState(null);
   const [image, setImage] = useState(null);

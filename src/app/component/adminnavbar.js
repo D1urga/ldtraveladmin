@@ -53,12 +53,12 @@ export default function AdminNavbar() {
             </div> */}
             <ul className={styles.list}>
               <li>
-                <Link className={styles.links} href="">
+                <Link className={styles.links} href="/">
                   Add trips
                 </Link>
               </li>
               <li>
-                <Link className={styles.links} href="">
+                <Link className={styles.links} href="./message">
                   messages
                 </Link>
               </li>{" "}

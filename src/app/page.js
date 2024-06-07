@@ -91,7 +91,7 @@ export default function Home() {
 
     const response = await axios({
       method: "post",
-      url: `https://theldtourandtravelbackend-1.onrender.com/api/v1/destinations/postDestination`,
+      url: `https://theldtourandtravelbackend.onrender.com/api/v1/destinations/postDestination`,
       data: formData1,
       headers: { "Content-Type": "multipart/form-data" },
     })
@@ -104,7 +104,6 @@ export default function Home() {
     // setIsuploading(true);
     // setCurrentValue1(true);
     setisposting(false);
-    alert("posted");
   };
 
   return (
@@ -260,6 +259,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {isposting ? (
+          <div className={styles.isposting}>
+            <p className={styles.text}>Uploading please wait ...</p>
+          </div>
+        ) : null}
       </form>
     </div>
   );

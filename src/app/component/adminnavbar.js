@@ -61,7 +61,12 @@ export default function AdminNavbar() {
                 <Link className={styles.links} href="./message">
                   messages
                 </Link>
-              </li>{" "}
+              </li>
+              <li>
+                <Link className={styles.links} href="./book">
+                  bookings
+                </Link>
+              </li>
               {/* <li>
                 <Link className={styles.links} href="">
                   Destination

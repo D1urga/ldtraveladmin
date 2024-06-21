@@ -12,12 +12,16 @@ export default function Home() {
   const [transfers, setTransfers] = useState(false);
   const [sightseeing, setSightseeing] = useState(false);
   const [watersports, setWatersports] = useState(false);
+  const [isBestSelling, setIsBestSelling] = useState(false);
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
   const fivechange = (event) => {
     setFiveStar(event.target.checked);
+  };
+  const isbestSellingChange = (event) => {
+    setIsBestSelling(event.target.checked);
   };
   const fourchange = (event) => {
     setFourStar(event.target.checked);
@@ -83,6 +87,7 @@ export default function Home() {
     formData1.append("itdes", formData.itdes);
     formData1.append("fivestar", String(fivestar));
     formData1.append("fourstar", String(fourstar));
+    formData1.append("isbestselling", String(isBestSelling));
     formData1.append("threestar", String(threestar));
     formData1.append("breakfast", String(breakfast));
     formData1.append("transfers", String(transfers));
@@ -168,6 +173,17 @@ export default function Home() {
                   value={formData.cityTags}
                   onChange={handleInputChange}
                 ></input>
+
+                <p className={styles.p2}>Is bestselling ?</p>
+                <div className={styles.hotels}>
+                  <Checkbox
+                    checked={isBestSelling}
+                    onChange={isbestSellingChange}
+                    inputProps={{ "aria-label": "controlled" }}
+                  />
+                  <p className={styles.p3}>Yes</p>{" "}
+                </div>
+
                 <p className={styles.p2}>Hotel options</p>
                 <div className={styles.hotels}>
                   <Checkbox

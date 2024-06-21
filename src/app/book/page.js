@@ -23,7 +23,7 @@ export default function ContactRecieved() {
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
-        <p className={styles.p1}>All messages</p>
+        <p className={styles.p1}>Booking messages</p>
         {isloading ? (
           <div className={styles.allmessages}>
             {data.map((val, index) => (

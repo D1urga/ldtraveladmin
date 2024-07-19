@@ -55,31 +55,37 @@ export default function AllPackages() {
   }, [data1]);
   return (
     <div className={styles.outer_div}>
-      <div className={styles.grid}>
-        {data &&
-          data.map((data, index) => (
-            <div className={styles.package} key={index}>
-              <img src={data.imgurl} className={styles.img}></img>
-              <p className={styles.p1}>{data.packageName}</p>
-              <p className={styles.p2}>{data.cityTags}</p>
+      {!isLoading1 ? (
+        <div className={styles.grid}>
+          {data &&
+            data.map((data, index) => (
+              <div className={styles.package} key={index}>
+                <img src={data.imgurl} className={styles.img}></img>
+                <p className={styles.p1}>{data.packageName}</p>
+                <p className={styles.p2}>{data.cityTags}</p>
 
-              <div className={styles.delete}>
-                <p className={styles.p3}>
-                  {format(new Date(data.createdAt), "PPpp")}
-                </p>
-                <button
-                  onClick={() => {
-                    deletePost({ postId: data._id });
-                  }}
-                  disabled={isLoading}
-                  className={styles.btn}
-                >
-                  <FaTrash className={styles.icon} />
-                </button>
+                <div className={styles.delete}>
+                  <p className={styles.p3}>
+                    {format(new Date(data.createdAt), "PPpp")}
+                  </p>
+                  <button
+                    onClick={() => {
+                      deletePost({ postId: data._id });
+                    }}
+                    disabled={isLoading}
+                    className={styles.btn}
+                  >
+                    <FaTrash className={styles.icon} />
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
-      </div>
+            ))}
+        </div>
+      ) : (
+        <div className={styles.del}>
+          <p>Loading please wait ..</p>
+        </div>
+      )}
       {isLoading ? (
         <div className={styles.del}>
           <p>Deleting please wait ..</p>

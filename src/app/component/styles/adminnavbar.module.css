@@ -76,11 +76,12 @@
     height: 1px;
   }
   .lower_div {
-    width: 40%;
+    /* width: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 3vw;
+    /* background-color: black; */
   }
   .icons {
     display: flex;
@@ -108,13 +109,16 @@
   .list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     list-style: none;
+    /* background-color: blue; */
+    width: 55vw;
+    /* padding-left: 8vw; */
   }
   .links {
-    padding: 10px 20px;
-    margin: 0 4px;
+    padding: 10px 15px;
     /* color: rgb(255, 255, 255); */
+    margin: 0 5px;
     font-size: 15px;
     font-weight: 540;
     /* background-color: rgb(0, 0, 0, 0.3); */
